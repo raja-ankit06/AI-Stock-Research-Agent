@@ -11,7 +11,7 @@ export default function FloatingStockPills() {
       change: "+6.85%",
       positive: true,
       tag: "AI Alpha",
-      style: { top: "32px", right: "32px" },
+      style: { top: "40%", right: "24px" },
     },
     {
       symbol: "AAPL",
@@ -20,7 +20,7 @@ export default function FloatingStockPills() {
       change: "+3.42%",
       positive: true,
       tag: "Breakout",
-      style: { top: "125px", right: "28px" },
+      style: { top: "50%", right: "24px" },
     },
     {
       symbol: "TSLA",
@@ -29,7 +29,7 @@ export default function FloatingStockPills() {
       change: "+4.18%",
       positive: true,
       tag: "Volume Spike",
-      style: { top: "54%", right: "28px" },
+      style: { top: "60%", right: "24px" },
     },
     {
       symbol: "MSFT",
@@ -38,7 +38,7 @@ export default function FloatingStockPills() {
       change: "+2.31%",
       positive: true,
       tag: "Cloud Surge",
-      style: { bottom: "135px", right: "28px" },
+      style: { top: "70%", right: "24px" },
     },
   ];
 
@@ -77,7 +77,7 @@ export default function FloatingStockPills() {
       {/* Floating Real-Time Agent Intelligence Indicator Card */}
       <motion.div
         className="floating-intel-pill glass-card"
-        style={{ top: "370px", left: "28px" }}
+        style={{ top: "52%", left: "28px" }}
         animate={{
           y: [0, -6, 0],
         }}
