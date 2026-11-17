@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default Financial Dark Terminal Theme */
+  --color-bg-base: #0B0F17;
+  --color-surface-1: #111827;
+  --color-surface-2: #1F2937;
+  --color-surface-3: #374151;
+  --color-border-subtle: #1F293D;
+  --color-border-strong: #374151;
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #9CA3AF;
+  --color-text-muted: #6B7280;
+
+  --color-brand-primary: #3B82F6;
+  --color-brand-accent: #60A5FA;
+  --color-bullish: #10B981;
+  --color-bearish: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #06B6D4;
+}
+
+.light {
+  --color-bg-base: #F8FAFC;
+  --color-surface-1: #FFFFFF;
+  --color-surface-2: #F1F5F9;
+  --color-surface-3: #E2E8F0;
+  --color-border-subtle: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+
+  --color-brand-primary: #2563EB;
+  --color-brand-accent: #1D4ED8;
+  --color-bullish: #059669;
+  --color-bearish: #DC2626;
+  --color-warning: #D97706;
+  --color-info: #0891B2;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbars for data tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-strong);
+}
+
