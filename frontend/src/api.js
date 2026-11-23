@@ -96,3 +96,12 @@ export const searchStockData = async (query, market, period) => {
   if (!res.ok) throw new Error(data.detail || "Stock not found");
   return data;
 };
+export async function runModule3Analysis(ticker, ohlcv_data, financial_data) {
+  const res = await fetch("http://127.0.0.1:8000/api/module3/analyze", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ticker, ohlcv_data, financial_data }),
+  });
+  if (!res.ok) throw new Error("Failed to run Module 3 AI Agents");
+  return res.json();
+}
