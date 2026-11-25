@@ -1,4 +1,4 @@
-AI-Powered Multi-Agent Stock Research Analyst
+**AI-Powered Multi-Agent Stock Research Analyst**
 
 A full-stack stock research web application built with **FastAPI**, **SQLAlchemy**, and **React (Vite)**. Instead of checking price charts, financial ratios, news headlines, and risk metrics across multiple tabs, this project brings everything into one streamlined dark-mode workspace powered by four specialized AI agents.
 
@@ -43,21 +43,23 @@ Follow these steps in your terminal to set up and run the complete project local
 ```bash
 git clone [https://github.com/raja-ankit06/AI-Stock-Research-Agent.git](https://github.com/raja-ankit06/AI-Stock-Research-Agent.git)
 cd AI-Stock-Research-Agent
+---
 
-Step 2: Set Up & Run the Backend
+### Step 2: Set Up & Run the Backend
 cd Backend
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
 pip install fastapi uvicorn sqlalchemy pydantic pandas numpy yfinance
 uvicorn main:app --reload
+---
 
-Step 3: Set Up & Run the Frontend
+### Step 3: Set Up & Run the Frontend
 cd frontend
 npm install
 npm install recharts lucide-react framer-motion
 npm run dev
-
+---
 
 Structure of the project:-
 
