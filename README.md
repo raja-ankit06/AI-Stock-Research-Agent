@@ -8,15 +8,15 @@ A full-stack stock research web application built with **FastAPI**, **SQLAlchemy
 
 This application works in three connected stages:
 
-1. **Authentication & Personal Research Workspace (Module 1)**
+1. **Authentication & Personal Research Workspace**
    - Users can register and log in securely (JWT authentication).
    - Stores default market (`NSE`, `BSE`, `NYSE`, `NASDAQ`) and time period (`1mo`, `3mo`, `6mo`, `1y`, `5y`) preferences, a personal watchlist, and automatic search history using **SQLAlchemy**.
 
-2. **Stock Search & Market Data Collection (Module 2)**
+2. **Stock Search & Market Data Collection**
    - Search any company name or ticker symbol to fetch historical **OHLCV** (Open, High, Low, Close, Volume) price data and financial metrics via `yfinance`.
    - Validates and structures the collected market data using **Pydantic** before passing it to the analysis layer.
 
-3. **Multi-Agent AI Analysis Engine (Module 3)**
+3. **Multi-Agent AI Analysis Engine**
    - Runs four independent Python agents on the fetched stock data and displays results in a tabbed **React + Recharts** dashboard:
      - **Fundamental Agent:** Evaluates revenue trends, profitability, debt position, and key ratios (`P/E`, `P/B`, `ROE`).
      - **Technical & Chart Agent:** Computes `SMA (20)`, `EMA (20)`, `RSI (14)`, and `MACD`, identifies trend signals, and renders an interactive price & moving-average chart.
